@@ -13,7 +13,7 @@ from easywebdav3 import easywebdav
 
 
 webdav = easywebdav.Client(host=HOST, port=PORT, username=USERNAME, password=PASSWORD)
-    for item in  webdav.ls():
-        f = open(join(dirname(__file__), item[0]), 'w')
-        webdav.download(from_filename, f)
-        f.close()```
+for item in  webdav.ls():
+    f = open(join(dirname(__file__), item[0]), 'w')
+    webdav.download(from_filename, f)
+    f.close()```
